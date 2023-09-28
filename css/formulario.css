@@ -1,0 +1,142 @@
+
+.conteudo-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+h3{
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input{
+    margin-bottom: 40px;
+    font-family: roboto;
+    width: 1100px;
+    height: 50px;
+    background-color: #53585D;
+    padding: 10px;
+}
+
+.input::-webkit-input-placeholder{
+    color: white;
+    font-family: roboto;
+    font-size: 15px;
+}
+
+.botoes{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-salvar{
+    width: 180px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+}
+
+.botao-limpar{
+    width: 180px;
+    height: 50px;
+    margin-right: 550px;
+    background-color: #757373;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+}
+
+.botao-categoria{
+    width: 180px;
+    height: 50px;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+}
+
+.botoes-categoria{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-salvar:hover{
+    background-color: #1c5db1;
+}
+
+.botao-limpar:hover{
+    background-color: #494848;
+}
+
+.botao-categoria:hover{
+    background-color: #1c5db1;
+}
+
+.frase-rodapé{
+    display: none;
+}
+
+@media screen and (max-width: 320px){
+    h3{
+        font-size: 40px;
+    }
+
+    .input{
+        width: 200px;
+    }
+
+    .botoes{
+        width: 300px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao-salvar{
+        width: 100px;
+    }
+
+    .botao-limpar{
+        width: 100px;
+        margin: 0;
+    }
+
+    .botao-categoria{
+        display: none;
+    }
+
+    .footer-novovideo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frase-rodape{
+        font-size: 15px;
+        color: white;
+    }
+}

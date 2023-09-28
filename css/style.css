@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Raleway:wght@200;300&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding-left: 0;
+    font-family: roboto;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 18px;
+    color: #F5F5F5;
+}
+
+h2{
+    font-size: 46px;
+    color: #F5F5F5;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: rgb(35, 34, 34);
+    color:white;
+    height: 100%;
+    width: 100%;
+}
+
+.barra-de-navegacao{
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px blue solid;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.botao-video{
+    align-items: center;
+    background-color: black;
+    border: 1px white solid;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    width: 180px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    background-image: url(/img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.fundo{
+    background-color: rgba(0, 0, 0, 0.571);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 600px;
+    width: 100%;
+}
+
+.banner-informacao{
+    width: 700px;
+}
+
+.titulo-banner{
+    background-color: #50c8e9;
+    border-radius: 4px;
+    font-size: 35px;
+    padding: 10px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.carrossel{
+    display: flex;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.carrossel-imagem{
+    border-radius: 4px;
+    border: 2px blue solid;;
+    height: 250px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+.carrossel-banner{
+    border-radius: 4px;
+    border: 2px blue solid;;
+    height: 250px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+.carrossel-data{
+    display: inline;
+}
+
+.carrossel-titulo{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.titulo-data{
+    background-color: #69953B;
+    border-radius: 4px;
+    font-size: 35px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.titulo-mobile{
+    background-color: #e7c21e;
+    border-radius: 4px;
+    font-size: 35px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+footer{
+    align-items: center;
+    background-color: black;
+    border-top: 2px blue solid;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    width: 100%;
+}
+
+a:visited {
+    color:white;
+}
+
+.carrossel-item:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.botao-video:hover{
+    background-color: rgb(28, 28, 28);
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.botao-video-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 320px){
+    .barra-de-navegacao{
+        width: 300px;
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .carrossel-banner{
+        display: none;
+    }
+
+    .carrosel{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .botao-video{
+        display: none;
+    }
+
+    .banner-informacao{
+        display: none;
+    }
+
+    .banner{
+        width: 125%;
+        height: 200px;
+    }
+
+    .fundo{
+        width: 110%;
+        height: 200px;
+    }
+
+    .carrossel-imagem{
+        width: 300px;
+        height: 200px;
+    }
+
+    .carrossel-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:20px;
+        padding-top: 0px;
+    }
+    
+    p{
+        margin-top: 10px;
+    }
+
+    .botao-video-mobile{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#2A7AE4;
+        color: white;
+        font-family: roboto;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .botao-video-mobile:hover{
+        cursor: pointer;
+    }
+}
